@@ -4,8 +4,6 @@
 using namespace std;
 
 #define MAX_SIZE 20
-char s[MAX_SIZE]; // компоненти стека
-int next = 0; // позиція стека
 
 struct tstk {
     int inf;
@@ -74,8 +72,8 @@ void main() {
 
     for (int i = 0; i < n; i++) {
         cout << "write number ";
-        cin >> s[i];
-        sp = add(sp, s[i]);
+        cin >> k;
+        sp = add(sp, k);
     }
 
     showstack(sp);
